@@ -1,0 +1,34 @@
+//=======================================================================
+// USEFUL LESS MIXINS
+//=======================================================================
+
+.transition (@transition: all 0.5s ease) {
+	-webkit-transition: @transition;
+	   -moz-transition: @transition;
+	    -ms-transition: @transition;
+	     -o-transition: @transition;
+	        transition: @transition;
+}
+
+.box-shadow (@string: #FFF 0px 0px 0px) {
+	-webkit-box-shadow: @string;
+	   -moz-box-shadow: @string;
+	        box-shadow: @string;
+}
+
+.border-radius (@radius: 4px) {
+	-webkit-border-radius: @radius;
+	   -moz-border-radius: @radius;
+	        border-radius: @radius;
+
+	-webkit-background-clip: padding-box;
+	   -moz-background-clip: padding;
+	        background-clip: padding-box;
+}
+
+.background-size(@string: 100% auto) {
+	-webkit-background-size: @string;
+	   -moz-background-size: @string;
+	     -o-background-size: @string;
+	        background-size: @string;
+}
