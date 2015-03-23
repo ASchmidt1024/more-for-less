@@ -32,3 +32,27 @@
 	     -o-background-size: @string;
 	        background-size: @string;
 }
+
+.columns(@count: 2; @gap: 40px; @rule-width: 1px; @rule-style: solid; @rule-color: #eee) {
+
+	-webkit-column-count: @count;
+	   -moz-column-count: @count;
+	        column-count: @count;
+
+	-webkit-column-gap: @gap;
+	   -moz-column-gap: @gap;
+	        column-gap: @gap;
+
+	-webkit-column-rule-width: @rule-width;
+	   -moz-column-rule-width: @rule-width;
+	        column-rule-width: @rule-width;
+
+	-webkit-column-rule-style: @rule-style;
+	   -moz-column-rule-style: @rule-style;
+	        column-rule-style: @rule-style;
+
+	-webkit-column-rule-color: @rule-color;
+	   -moz-column-rule-color: @rule-color;
+	        column-rule-color: @rule-color;
+
+}
