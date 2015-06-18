@@ -120,3 +120,20 @@
 	     -o-filter: blur(@pixel);
 	        filter: blur(@pixel);
 }
+
+.placeholder-color (@phcolor: inherit) {
+	&::-webkit-input-placeholder {
+		color: @phcolor;
+	}
+	&:-moz-placeholder {
+		color: @phcolor;
+		opacity: 1;
+	}
+	&::-moz-placeholder {
+		color: @phcolor;
+		opacity: 1;
+	}
+	&:-ms-input-placeholder {
+		color: @phcolor;
+	}
+}
